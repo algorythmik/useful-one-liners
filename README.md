@@ -52,3 +52,8 @@ and then portforward:
 
 `kubectl cp <some-namespace>/<some-pod>:/tmp/foo /tmp/bar`
 
+## s3
+sync  an s3 bucket where only keys mathig specific patterns are included:
+```
+aws s3 sync --sse aws:kms --sse-kms-key-id keyid s3://s3bukcet/keys/ mylocalpath --exclude '*' --include *.csv' --include '*.tiff'
+```
