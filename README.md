@@ -15,6 +15,9 @@ docker run -p 9000:9000 my_docker
 
 `docker rm $(docker ps -a -q)`
 
+`docker top CONTAINER`
+- list all running processes of a container
+
 ## Kuberneters
 - Get list of pods:
 
