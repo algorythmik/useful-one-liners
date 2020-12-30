@@ -17,7 +17,10 @@ docker run -p 9000:9000 my_docker
 
 `docker top CONTAINER`
 - list all running processes of a container
-
+- some useful arguments:
+    - `--name` to name a container
+    - `--detach` run in the detached mode
+    - `--env` (`-e`) pass in an environment variable
 ## Kuberneters
 - Get list of pods:
 
