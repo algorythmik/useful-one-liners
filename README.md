@@ -7,7 +7,10 @@ Some useful one-liners that I use in daily works:
 docker build -t my_docker .
 docker run -p 9000:9000 my_docker
 ```
-- Connecting to the container and getting a bash:
+- Connecting to the container and geting a shell:
+`docker container run -it`: start the container interactively (i for interactive and t for pseudo tty)
+
+`docker container exec -it`: run additional command in existing container
 
 `docker exec -it <mycontainer> /bin/bash`
 
@@ -15,13 +18,20 @@ docker run -p 9000:9000 my_docker
 
 `docker rm $(docker ps -a -q)`
 
-`docker top CONTAINER`
-- list all running processes of a container
 - some useful arguments:
     - `--name` to name a container
     - `--detach` run in the detached mode
     - `--env` (`-e`) pass in an environment variable
 `docker container stop [list of names]` to stop containers
+
+- Inspecting containers:
+
+`docker container top CONTAINER`: list all running processes of a container
+
+`docker container inspect`: displaying details of one  or more container
+
+`docker container stats`: displays perfromance stats for all containers in a real-time stream
+
 ## Kuberneters
 - Get list of pods:
 
