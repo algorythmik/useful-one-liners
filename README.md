@@ -21,6 +21,7 @@ docker run -p 9000:9000 my_docker
     - `--name` to name a container
     - `--detach` run in the detached mode
     - `--env` (`-e`) pass in an environment variable
+`docker container stop [list of names]` to stop containers
 ## Kuberneters
 - Get list of pods:
 
