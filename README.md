@@ -1,6 +1,14 @@
 # useful-one-liners
 
-Some useful one-liners that I use in daily works:
+## screen 
+- list of screens:
+`screen -ls`
+- re-attacn to a screen:
+`screen -r session-name`
+- kill a screen: 
+`ctrl` + `a` and then `k`
+ 
+
 ## Docker
 - Build and Run:
 ```
