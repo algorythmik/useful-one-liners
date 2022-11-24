@@ -1,6 +1,7 @@
 # useful-one-liners
 
 ## screen 
+- screen -S name
 - list of screens:
 `screen -ls`
 - re-attacn to a screen:
